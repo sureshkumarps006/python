@@ -1,0 +1,32 @@
+git clone https://github.com/vlvassilev/yuma123.git
+
+cd yuma123/
+
+sudo apt-get install git autoconf automake pkg-config gcc libtool libxml2-dev libssh2-1-dev make libncurses5-dev zlib1g-dev libreadline-dev libssl-dev
+
+git clone git://git.code.sf.net/p/yuma123/git yuma123-git
+
+cd yuma123-git
+
+autoreconf -i -f
+
+./configure CFLAGS='-g -O0' CXXFLAGS='-g -O0' --prefix=/usr
+
+make
+
+sudo make install
+
+
+cd /netconf/python
+
+
+sudo apt-get install python3-dev
+
+sudo pip3 install lxml
+
+sudo python3 setup.py install
+
+python3 healthcheckrecreated.py
+
+
+
