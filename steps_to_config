@@ -24,7 +24,7 @@ sudo apt-get install python3-dev
 
 sudo pip3 install lxml
 
-sudo python3 setup.py install
+sudo python3 setup.py install /  python3 -m pip install --user -e .  (path= ~/autoscript/yumaconnect/yuma123/netconf/python )
 
 python3 healthcheckrecreated.py
 
